@@ -8,12 +8,12 @@ async function send(data, emailFrom, emailTo) {
     
       // create reusable transporter object using the default SMTP transport
       let transporter = await nodemailer.createTransport({
-        host: 'smtp.rambler.ru',
-        port: 465,
+        host: '',
+        port: ,
         secure: true,
         auth: {
           user: emailFrom,
-          pass: 'privet3345'
+          pass: ''
         },
         tls: { maxVersion: 'TLSv1.2' }
     });
