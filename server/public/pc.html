@@ -1,0 +1,49 @@
+<!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Sat Sep 18 2021 05:58:48 GMT+0000 (Coordinated Universal Time)  -->
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+	<div id="work" width="225" height="350">
+		<h3 id="pagetitle">Личный кабинет</h3>	
+
+                    <div style="width:780px;margin: 0 auto;min-height:700px;">
+                        <table style="width:100%;border-collapse:collapse;padding:0px;margin:0px;">
+                            <tr>
+                                <td>
+                                    <div class="body_style" id="AuthContent" style="margin-bottom:0px;margin-top:0px;">
+                                        <span></span>
+                                    </div>
+                                </td>
+                                <td style="padding-left: 1em;">
+                                    <div class="body_style" id="MenuContent">
+                                        <span></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="contentcontainer body_style" id="DynamicContent" style="padding-bottom: 50px;">
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <script type='text/javascript'>
+                        var qbrAfterLoad= function () {
+                            $(window).scrollTop(0);
+                            stds.Sys.Utils.init(function () {
+
+                                    stds.Sys.doAction({ name: "Sys.General.Action.ViewAuth", params: { targetContainer: "AuthContent" } });
+                                    stds.Sys.doAction({ name: "Personal.Individual.Action.ViewAccountListH", params: { targetContainer: "MenuContent", taskParams: {} } });
+
+                            });
+                        }
+                    </script>
+                    <script type="text/javascript" src="http://testapi.quarterbiller.ru/sys/getF.aspx?content=kind:js;name:libs+kind:js;name:sys+kind:css;name:sys&type=async"></script>
+
+
+	</div>
+</body>
+</html>
