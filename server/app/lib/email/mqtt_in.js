@@ -137,6 +137,7 @@ function mqtt_in(topic_in) {
                 const temperature = {
                     id_station: req.body.id_text,
                     temparature: arr_temperature[1].replace(/[^0-9.]/g, ""),
+                    d_date: d_date,
                   };
                 console.log('in', temperature)  
                 table_base(Temperature, temperature);  
@@ -164,6 +165,7 @@ function mqtt_in(topic_in) {
                         qty: arr_buyer[2].replace(/[^0-9.]/g, ""),
                         comment: arr_buyer[1],
                         id_station: req.body.id_text,
+                        d_date: d_date,
                     };
                     table_base(Buyer, Buyer_req);
                 }

@@ -17,6 +17,7 @@ exports.create = (req, res) => {
       id_station: req.body.id_station,
       qty: req.body.qty,
       comment: req.body.comment,
+      d_date: req.body.d_date,
     };
   
     // Save Tutorial in the database

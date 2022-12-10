@@ -19,6 +19,7 @@ exports.create = (req, res) => {
       comment: req.body.comment,
       datebegin: req.body.datebegin,
       dateend: req.body.dateend,
+      d_date: req.body.d_date,
     };
   
     console.log(create_body)

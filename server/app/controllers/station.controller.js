@@ -20,6 +20,7 @@ exports.create = (req, res) => {
       adres: req.body.adres,
       location: req.body.location,
       comment: req.body.comment,
+      d_date: req.body.d_date,
     };
   
     console.log(create_body)

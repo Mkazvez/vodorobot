@@ -21,6 +21,7 @@ exports.create = (req, res) => {
       procent_of_used: req.body.procent_of_used,
       status: req.body.status,
       comment: req.body.comment,
+      d_date: req.body.d_date,
     };
   
     // Save Tutorial in the database

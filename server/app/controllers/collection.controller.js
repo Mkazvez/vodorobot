@@ -20,6 +20,7 @@ exports.create = (req, res) => {
       user_string: req.body.user_string,
       date_maintenance: req.body.date_maintenance,
       comment: req.body.comment,
+      d_date: req.body.d_date,
     };
   
     // Save Tutorial in the database
